@@ -203,7 +203,8 @@ All scripts save output to `~/桌面/`.
 │   ├── ollama_override.conf  # Ollama systemd override
 │   └── apply_gpu_split.sh    # GPU split setup: Intel→XRDP display, NVIDIA→AI compute
 ├── preload_models.sh         # @reboot: preload hermes3:3b + qwen3.6:latest
-└── monitor_health.sh         # Health monitoring (crontab: */30 * * * *)
+├── monitor_health.sh         # Health monitoring (crontab: */30 * * * *)
+└── CLAUDE.md                 # 模組總覽、執行指令、架構說明
                               # Monitors: CPU/RAM/Disk/GPU + Ollama/Dashboard/WebUI/n8n/SearXNG
 
 ~/hermes-dashboard/           # FastAPI web UI — http://localhost:7860

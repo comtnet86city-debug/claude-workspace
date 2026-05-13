@@ -204,6 +204,7 @@ All scripts save output to `~/桌面/`.
 │   └── apply_gpu_split.sh    # GPU split setup: Intel→XRDP display, NVIDIA→AI compute
 ├── preload_models.sh         # @reboot: preload hermes3:3b + qwen3.6:latest
 ├── monitor_health.sh         # Health monitoring (crontab: */30 * * * *)
+├── README.md                 # 功能模組總覽、快速開始、相關 repo
 └── CLAUDE.md                 # 模組總覽、執行指令、架構說明
                               # Monitors: CPU/RAM/Disk/GPU + Ollama/Dashboard/WebUI/n8n/SearXNG
 
@@ -211,6 +212,7 @@ All scripts save output to `~/桌面/`.
 ├── main.py                   # API server (8 scripts, /api/services, /api/b44/*)
 ├── start.sh                  # Launch script (@reboot via crontab)
 ├── static/index.html         # Alpine.js SPA (7 tabs: 儀表板/Agents/模型/檔案/日誌/健康/外部服務)
+├── README.md                 # 功能簡介、啟動方式、B44 API 說明
 └── CLAUDE.md                 # API 端點、頁籤說明、依賴與注意事項
 
 ~/ComfyUI/                    # Stable Diffusion
@@ -222,10 +224,12 @@ All scripts save output to `~/桌面/`.
 ~/penpot/                     # 設計協作平台（Penpot，port 9001）
 ├── docker-compose.yml        # 5 containers: frontend/backend/exporter/postgres/redis
 ├── index.html                # 修改版首頁（標題改為繁中），bind mount 覆蓋容器內檔案
+├── README.md                 # 容器架構、中文化說明、相關 repo
 └── CLAUDE.md                 # 容器清單、中文化設定、Volume 說明
 
 ~/gitea/                      # 設計協作倉庫（Gitea，port 3001，SSH: 2222）
 ├── docker-compose.yml        # SQLite 後端，DEFAULT_LOCALE=zh-TW，APP_NAME=設計協作倉庫
+├── README.md                 # 設定重點、SSH 使用、相關 repo
 └── CLAUDE.md                 # 環境變數、SSH 設定、升級指引
 
 ~/bin/                        # 個人工具腳本（已加入 $PATH）
@@ -235,19 +239,20 @@ All scripts save output to `~/桌面/`.
 ├── ocpaste                   # 剪貼簿/截圖 → AI 分析 → OpenClaw
 ├── clipboard-png-daemon      # X11 剪貼簿 BMP→PNG 自動轉換
 ├── start-clipboard-daemon.sh # 啟動 clipboard-png-daemon
+├── README.md                 # 腳本清單、快速示例、相關 repo
 └── CLAUDE.md                 # 所有腳本用法、模型速查表
 ```
 
 ## Git Repositories (GitHub: comtnet86city-debug)
 
-| 本地路徑 | GitHub Repo | CLAUDE.md 涵蓋內容 |
-|----------|-------------|-------------------|
-| `~/ai_projects/` | `comtnet86city-debug/ai_projects` | 模組總覽、執行指令、架構說明、環境變數、.gitignore、參見 |
-| `~/hermes-dashboard/` | `comtnet86city-debug/hermes-dashboard` | API 端點完整列表、7 頁籤說明、依賴、注意事項、參見 |
-| `~/penpot/` | `comtnet86city-debug/penpot` | 容器清單、中文化設定、Volume、升級確認步驟、參見 |
-| `~/gitea/` | `comtnet86city-debug/gitea` | 環境變數、SSH 設定、app.ini 查看、升級指引、參見 |
-| `~/bin/` | `comtnet86city-debug/bin` | 所有腳本用法、hm 模型速查表、備援鏈說明、參見 |
-| `~/` (CLAUDE.md only) | `comtnet86city-debug/claude-workspace` | 本檔即文件，各 repo CLAUDE.md 均設有參見連結指向此處 |
+| 本地路徑 | GitHub Repo | README | CLAUDE.md |
+|----------|-------------|--------|-----------|
+| `~/ai_projects/` | `comtnet86city-debug/ai_projects` | ✓ | 模組總覽、執行指令、架構說明、環境變數、參見 |
+| `~/hermes-dashboard/` | `comtnet86city-debug/hermes-dashboard` | ✓ | API 端點完整列表、7 頁籤說明、依賴、注意事項、參見 |
+| `~/penpot/` | `comtnet86city-debug/penpot` | ✓ | 容器清單、中文化設定、Volume、升級確認步驟、參見 |
+| `~/gitea/` | `comtnet86city-debug/gitea` | ✓ | 環境變數、SSH 設定、app.ini 查看、升級指引、參見 |
+| `~/bin/` | `comtnet86city-debug/bin` | ✓ | 所有腳本用法、hm 模型速查表、備援鏈說明、參見 |
+| `~/` | `comtnet86city-debug/claude-workspace` | ✓ | 本檔即文件，各 repo CLAUDE.md 均設有參見連結 |
 
 Push 指令：`git push origin master`（各 repo remote 均已設定 PAT）
 

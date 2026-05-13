@@ -1,0 +1,4 @@
+# 忽略所有，只追蹤白名單內的檔案
+*
+!.gitignore
+!CLAUDE.md

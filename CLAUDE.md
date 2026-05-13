@@ -209,7 +209,8 @@ All scripts save output to `~/桌面/`.
 ~/hermes-dashboard/           # FastAPI web UI — http://localhost:7860
 ├── main.py                   # API server (8 scripts, /api/services, /api/b44/*)
 ├── start.sh                  # Launch script (@reboot via crontab)
-└── static/index.html         # Alpine.js SPA (7 tabs: 儀表板/Agents/模型/檔案/日誌/健康/外部服務)
+├── static/index.html         # Alpine.js SPA (7 tabs: 儀表板/Agents/模型/檔案/日誌/健康/外部服務)
+└── CLAUDE.md                 # API 端點、頁籤說明、依賴與注意事項
 
 ~/ComfyUI/                    # Stable Diffusion
 ├── main.py                   # ComfyUI server (port 8188)

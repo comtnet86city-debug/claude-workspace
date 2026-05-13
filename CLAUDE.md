@@ -5,9 +5,9 @@
 
 此檔案同時扮演兩個角色：
 1. **Claude Code 指引** — Claude Code CLI 自動讀取，提供工作區的環境、腳本用法與架構說明
-2. **GitHub 備份** — 透過 `~/` 的 git repo（僅追蹤此檔與 `.gitignore`）備份至 `claude-workspace`
+2. **GitHub 備份** — 透過 `~/` 的 git repo（追蹤 `CLAUDE.md`、`README.md`、`.gitignore`）備份至 `claude-workspace`
 
-更新後推送：`git -C ~ add CLAUDE.md && git -C ~ commit -m "..." && git -C ~ push origin master`
+更新後推送：`git -C ~ add CLAUDE.md README.md && git -C ~ commit -m "..." && git -C ~ push origin master`
 
 ---
 

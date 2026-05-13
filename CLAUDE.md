@@ -332,8 +332,22 @@ FastAPI server on port 11435. Exposes GPT-5.4/5.5 and Gemini 2.5 Flash through t
 - `~/ai_agent_env/` — primary venv for all agent scripts
 - `~/marker_env/` — isolated venv for marker-pdf (avoids openai version conflict with crewai)
 - `~/comfyui_env/` — isolated venv for ComfyUI
-- `~/ai_projects/server_monitor/tools.py` — all CrewAI tools (6 tools)
-- `~/ai_projects/ppt/final_agent.py` — reference implementation for Pydantic-structured CrewAI output
+- `~/ai_projects/CLAUDE.md` — 模組總覽、執行指令、架構說明、環境變數
+- `~/ai_projects/ppt/final_agent.py` — CrewAI + Pydantic 結構化 PPT（reference implementation）
+- `~/ai_projects/excel/generate_excel.py` — CrewAI + openpyxl AI Excel 報表（--topic、--rows）
+- `~/ai_projects/rag/ingest.py` — 文件嵌入 ChromaDB（marker-pdf 精準解析 PDF）
+- `~/ai_projects/rag/query.py` — RAG 查詢 agent（CrewAI + kb_search tool）
+- `~/ai_projects/whisper/transcribe_agent.py` — faster-whisper 語音轉文字（--summarize）
+- `~/ai_projects/comfy/generate_image.py` — ComfyUI Stable Diffusion（--translate）
+- `~/ai_projects/tts/speak.py` — edge-tts 繁體中文語音合成（--voice/--output/--list-voices）
+- `~/ai_projects/tts_api/app.py` — TTS REST API（port 19002，WordPress 整合）
+- `~/ai_projects/vision/describe_image.py` — moondream + qwen3.6 圖片分析（--speak）
+- `~/ai_projects/vision/ocpaste.py` — 剪貼簿/截圖 → AI 分析 → OpenClaw
+- `~/ai_projects/server_monitor/tools.py` — 所有 CrewAI 工具（6 tools：disk/health/local/search/whisper/comfy）
+- `~/ai_projects/claude_bridge/app.py` — Claude Code CLI → OpenAI API bridge（port 19001）
+- `~/ai_projects/openclaw-proxy/server.py` — OpenClaw → OpenAI proxy（port 11435，GPT/Gemini）
+- `~/ai_projects/monitor_health.sh` — 健康監控腳本（crontab 每 30 分鐘，閾值警示）
+- `~/ai_projects/preload_models.sh` — @reboot 預載 hermes3:3b + qwen3.6:latest
 - `~/hermes-dashboard/main.py` — FastAPI web dashboard (port 7860)
 - `~/hermes-dashboard/CLAUDE.md` — API 端點、頁籤說明、依賴與注意事項
 - `~/.hermes_token` — dashboard API token (auto-generated, required for /api/b44/* endpoints)
@@ -346,12 +360,6 @@ FastAPI server on port 11435. Exposes GPT-5.4/5.5 and Gemini 2.5 Flash through t
 - `~/.openclaw/openclaw.json` — jwd OpenClaw config (v2026.5.7, port 18789, primary: hermes3:3b)
 - `~/.openclaw/openclaw.json.bak.*` — 設定備份（更新前自動產生）
 - `~/setup_openclaw_juser1.sh` — juser1 OpenClaw 安裝腳本（v2026.5.6, port 18790）
-- `~/ai_projects/tts/speak.py` — edge-tts 繁體中文語音合成（無需 GPU）
-- `~/ai_projects/vision/describe_image.py` — moondream + qwen3.6 圖片分析
-- `~/ai_projects/vision/ocpaste.py` — 剪貼簿/截圖 → AI 分析 → OpenClaw
-- `~/ai_projects/claude_bridge/app.py` — Claude Code CLI → OpenAI API bridge (port 19001)
-- `~/ai_projects/openclaw-proxy/server.py` — OpenClaw → OpenAI proxy (port 11435, GPT/Gemini)
-- `~/ai_projects/CLAUDE.md` — 模組總覽、執行指令、架構說明、環境變數
 - `~/penpot/docker-compose.yml` — 設計協作平台設定（5 containers，port 9001）
 - `~/penpot/index.html` — 修改版前端首頁（繁中標題），bind mount 至容器 `/var/www/app/index.html`
 - `~/penpot/CLAUDE.md` — 容器清單、中文化設定、Volume 與升級說明

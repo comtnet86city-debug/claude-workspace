@@ -335,6 +335,7 @@ FastAPI server on port 11435. Exposes GPT-5.4/5.5 and Gemini 2.5 Flash through t
 - `~/ai_projects/server_monitor/tools.py` — all CrewAI tools (6 tools)
 - `~/ai_projects/ppt/final_agent.py` — reference implementation for Pydantic-structured CrewAI output
 - `~/hermes-dashboard/main.py` — FastAPI web dashboard (port 7860)
+- `~/hermes-dashboard/CLAUDE.md` — API 端點、頁籤說明、依賴與注意事項
 - `~/.hermes_token` — dashboard API token (auto-generated, required for /api/b44/* endpoints)
 - `~/ComfyUI/models/checkpoints/v1-5-pruned-emaonly.safetensors` — SD 1.5 model (4.27GB)
 - `~/bin/start-all` — 啟動所有 AI 服務（Docker 容器 + Hermes Dashboard + ComfyUI + Claude Bridge）

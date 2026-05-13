@@ -1,4 +1,15 @@
-# CLAUDE.md
+# CLAUDE.md — AI 工作區設定文件
+
+**GitHub:** `comtnet86city-debug/claude-workspace`
+**本地路徑:** `~/CLAUDE.md`
+
+此檔案同時扮演兩個角色：
+1. **Claude Code 指引** — Claude Code CLI 自動讀取，提供工作區的環境、腳本用法與架構說明
+2. **GitHub 備份** — 透過 `~/` 的 git repo（僅追蹤此檔與 `.gitignore`）備份至 `claude-workspace`
+
+更新後推送：`git -C ~ add CLAUDE.md && git -C ~ commit -m "..." && git -C ~ push origin master`
+
+---
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 

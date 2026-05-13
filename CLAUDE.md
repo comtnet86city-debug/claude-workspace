@@ -219,22 +219,24 @@ All scripts save output to `~/桌面/`.
 
 ~/penpot/                     # 設計協作平台（Penpot，port 9001）
 ├── docker-compose.yml        # 5 containers: frontend/backend/exporter/postgres/redis
-└── index.html                # 修改版首頁（標題改為繁中），bind mount 覆蓋容器內檔案
+├── index.html                # 修改版首頁（標題改為繁中），bind mount 覆蓋容器內檔案
+└── CLAUDE.md                 # 容器清單、中文化設定、Volume 說明
 
 ~/gitea/                      # 設計協作倉庫（Gitea，port 3001，SSH: 2222）
-└── docker-compose.yml        # SQLite 後端，DEFAULT_LOCALE=zh-TW，APP_NAME=設計協作倉庫
+├── docker-compose.yml        # SQLite 後端，DEFAULT_LOCALE=zh-TW，APP_NAME=設計協作倉庫
+└── CLAUDE.md                 # 環境變數、SSH 設定、升級指引
 ```
 
 ## Git Repositories (GitHub: comtnet86city-debug)
 
-| 本地路徑 | GitHub Repo | 說明 |
-|----------|-------------|------|
-| `~/ai_projects/` | `comtnet86city-debug/ai_projects` | 所有 AI agent 腳本 |
-| `~/hermes-dashboard/` | `comtnet86city-debug/hermes-dashboard` | FastAPI 控制台 |
-| `~/penpot/` | `comtnet86city-debug/penpot` | 設計協作平台 Docker Compose |
-| `~/gitea/` | `comtnet86city-debug/gitea` | 設計協作倉庫 Docker Compose |
-| `~/bin/` | `comtnet86city-debug/bin` | 個人工具腳本集 |
-| `~/` (CLAUDE.md only) | `comtnet86city-debug/claude-workspace` | 工作區設定文件 |
+| 本地路徑 | GitHub Repo | CLAUDE.md |
+|----------|-------------|-----------|
+| `~/ai_projects/` | `comtnet86city-debug/ai_projects` | ✓ 模組總覽、執行指令、架構說明 |
+| `~/hermes-dashboard/` | `comtnet86city-debug/hermes-dashboard` | ✓ API 端點、頁籤說明、依賴 |
+| `~/penpot/` | `comtnet86city-debug/penpot` | ✓ 容器清單、中文化設定、Volume |
+| `~/gitea/` | `comtnet86city-debug/gitea` | ✓ 環境變數、SSH 設定、升級指引 |
+| `~/bin/` | `comtnet86city-debug/bin` | ✓ 所有腳本用法、模型速查表 |
+| `~/` (CLAUDE.md only) | `comtnet86city-debug/claude-workspace` | ✓ 本檔即文件 |
 
 Push 指令：`git push origin master`（各 repo remote 均已設定 PAT）
 

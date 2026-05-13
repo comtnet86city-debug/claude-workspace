@@ -242,12 +242,12 @@ All scripts save output to `~/桌面/`.
 
 | 本地路徑 | GitHub Repo | CLAUDE.md 涵蓋內容 |
 |----------|-------------|-------------------|
-| `~/ai_projects/` | `comtnet86city-debug/ai_projects` | 模組總覽、執行指令、架構說明、環境變數、.gitignore |
-| `~/hermes-dashboard/` | `comtnet86city-debug/hermes-dashboard` | API 端點完整列表、7 頁籤說明、依賴、注意事項 |
-| `~/penpot/` | `comtnet86city-debug/penpot` | 容器清單、中文化設定、Volume、升級確認步驟 |
-| `~/gitea/` | `comtnet86city-debug/gitea` | 環境變數、SSH 設定、app.ini 查看、升級指引 |
-| `~/bin/` | `comtnet86city-debug/bin` | 所有腳本用法、hm 模型速查表、備援鏈說明 |
-| `~/` (CLAUDE.md only) | `comtnet86city-debug/claude-workspace` | 本檔即文件，頂部含 repo meta 與推送指令 |
+| `~/ai_projects/` | `comtnet86city-debug/ai_projects` | 模組總覽、執行指令、架構說明、環境變數、.gitignore、參見 |
+| `~/hermes-dashboard/` | `comtnet86city-debug/hermes-dashboard` | API 端點完整列表、7 頁籤說明、依賴、注意事項、參見 |
+| `~/penpot/` | `comtnet86city-debug/penpot` | 容器清單、中文化設定、Volume、升級確認步驟、參見 |
+| `~/gitea/` | `comtnet86city-debug/gitea` | 環境變數、SSH 設定、app.ini 查看、升級指引、參見 |
+| `~/bin/` | `comtnet86city-debug/bin` | 所有腳本用法、hm 模型速查表、備援鏈說明、參見 |
+| `~/` (CLAUDE.md only) | `comtnet86city-debug/claude-workspace` | 本檔即文件，各 repo CLAUDE.md 均設有參見連結指向此處 |
 
 Push 指令：`git push origin master`（各 repo remote 均已設定 PAT）
 

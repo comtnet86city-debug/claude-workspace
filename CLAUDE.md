@@ -227,6 +227,15 @@ All scripts save output to `~/桌面/`.
 ~/gitea/                      # 設計協作倉庫（Gitea，port 3001，SSH: 2222）
 ├── docker-compose.yml        # SQLite 後端，DEFAULT_LOCALE=zh-TW，APP_NAME=設計協作倉庫
 └── CLAUDE.md                 # 環境變數、SSH 設定、升級指引
+
+~/bin/                        # 個人工具腳本（已加入 $PATH）
+├── start-all                 # 啟動所有 AI 服務
+├── hm                        # Hermes 模型快速切換（本地 + 雲端）
+├── b44-info                  # Hermes Dashboard API Token 與連線資訊
+├── ocpaste                   # 剪貼簿/截圖 → AI 分析 → OpenClaw
+├── clipboard-png-daemon      # X11 剪貼簿 BMP→PNG 自動轉換
+├── start-clipboard-daemon.sh # 啟動 clipboard-png-daemon
+└── CLAUDE.md                 # 所有腳本用法、模型速查表
 ```
 
 ## Git Repositories (GitHub: comtnet86city-debug)

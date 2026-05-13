@@ -337,7 +337,10 @@ FastAPI server on port 11435. Exposes GPT-5.4/5.5 and Gemini 2.5 Flash through t
 - `~/hermes-dashboard/main.py` — FastAPI web dashboard (port 7860)
 - `~/.hermes_token` — dashboard API token (auto-generated, required for /api/b44/* endpoints)
 - `~/ComfyUI/models/checkpoints/v1-5-pruned-emaonly.safetensors` — SD 1.5 model (4.27GB)
-- `~/bin/start-all` — start all services script
+- `~/bin/start-all` — 啟動所有 AI 服務（Docker 容器 + Hermes Dashboard + ComfyUI + Claude Bridge）
+- `~/bin/hm` — Hermes 模型快速切換（本地 Ollama + 雲端 Gemini/GPT）
+- `~/bin/b44-info` — Hermes Dashboard API Token 與連線資訊顯示工具
+- `~/bin/ocpaste` — 剪貼簿/截圖 → AI 分析 → OpenClaw（包裝 vision/ocpaste.py）
 - `~/.openclaw/openclaw.json` — jwd OpenClaw config (v2026.5.7, port 18789, primary: hermes3:3b)
 - `~/.openclaw/openclaw.json.bak.*` — 設定備份（更新前自動產生）
 - `~/setup_openclaw_juser1.sh` — juser1 OpenClaw 安裝腳本（v2026.5.6, port 18790）

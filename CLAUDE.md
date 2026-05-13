@@ -349,5 +349,8 @@ FastAPI server on port 11435. Exposes GPT-5.4/5.5 and Gemini 2.5 Flash through t
 - `~/ai_projects/vision/ocpaste.py` — 剪貼簿/截圖 → AI 分析 → OpenClaw
 - `~/ai_projects/claude_bridge/app.py` — Claude Code CLI → OpenAI API bridge (port 19001)
 - `~/ai_projects/openclaw-proxy/server.py` — OpenClaw → OpenAI proxy (port 11435, GPT/Gemini)
-- `~/penpot/docker-compose.yml` — 設計協作平台設定（`~/penpot/index.html` bind mount 提供繁中標題）
+- `~/penpot/docker-compose.yml` — 設計協作平台設定（5 containers，port 9001）
+- `~/penpot/index.html` — 修改版前端首頁（繁中標題），bind mount 至容器 `/var/www/app/index.html`
+- `~/penpot/CLAUDE.md` — 容器清單、中文化設定、Volume 與升級說明
 - `~/gitea/docker-compose.yml` — 設計協作倉庫設定（APP_NAME=設計協作倉庫、DEFAULT_LOCALE=zh-TW）
+- `~/gitea/CLAUDE.md` — 環境變數、SSH 設定、升級指引

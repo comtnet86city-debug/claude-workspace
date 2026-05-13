@@ -214,6 +214,19 @@ All scripts save output to `~/桌面/`.
 └── docker-compose.yml        # SQLite 後端，DEFAULT_LOCALE=zh-TW，APP_NAME=設計協作倉庫
 ```
 
+## Git Repositories (GitHub: comtnet86city-debug)
+
+| 本地路徑 | GitHub Repo | 說明 |
+|----------|-------------|------|
+| `~/ai_projects/` | `comtnet86city-debug/ai_projects` | 所有 AI agent 腳本 |
+| `~/hermes-dashboard/` | `comtnet86city-debug/hermes-dashboard` | FastAPI 控制台 |
+| `~/penpot/` | `comtnet86city-debug/penpot` | 設計協作平台 Docker Compose |
+| `~/gitea/` | `comtnet86city-debug/gitea` | 設計協作倉庫 Docker Compose |
+| `~/bin/` | `comtnet86city-debug/bin` | 個人工具腳本集 |
+| `~/` (CLAUDE.md only) | `comtnet86city-debug/claude-workspace` | 工作區設定文件 |
+
+Push 指令：`git push origin master`（各 repo remote 均已設定 PAT）
+
 ## Code Architecture
 
 ### CrewAI Pattern
